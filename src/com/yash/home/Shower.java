@@ -30,12 +30,18 @@ public class Shower extends Device {
 		System.out.println("Select Warertype -> 1) Hot Water 2) Cold Water 3) Normal Water\n-> ");
 		int choice = sc.nextInt();
 		
-		if(choice==1)
+		if(choice==1) {
 			sh.setWatertype("Hot");
-		else if(choice==2)
+			System.out.println("WaterType Changes To Hot !");
+		}
+		else if(choice==2) {
 			sh.setWatertype("Cold");
-		else if(choice==3)
+			System.out.println("WaterType Changes To Cold !");
+			}
+		else if(choice==3) {
 			sh.setWatertype("Normal");
+			System.out.println("WaterType Changes To Normal !");
+			}
 		else
 			System.out.println("Invalid choice !");
 	}
