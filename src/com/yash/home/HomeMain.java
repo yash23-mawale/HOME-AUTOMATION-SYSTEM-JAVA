@@ -105,9 +105,9 @@ public class HomeMain {
 							Television tv_down = (Television) home.rooms.get(index).getDevice().get(device_index);
 								if(tv_choice==1)
 									tv_down.OnOff_Device(tv_down);
-								else if(choice==2) 
+								else if(tv_choice==2) 
 									tv_down.Change_Channel(tv_down);
-								else if(choice==3)
+								else if(tv_choice==3)
 									tv_down.Control_volume(tv_down);
 								else
 									System.out.println("Invalid choice !");
